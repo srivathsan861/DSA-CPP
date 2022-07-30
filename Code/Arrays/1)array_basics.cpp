@@ -3,23 +3,23 @@ using namespace std;
 
 int main(){
     
-    int a[5]={0};
+    int a[5]={0};                 //declaration and initialization
     
     cout << "Enter the values:" << endl;
 
     for(int i = 0; i < 5; ++i){
-        cin >> a[i];
+        cin >> a[i];                 //input
     }
 
     cout << "Out put:" << endl;
     
     for(int i = 0;i < 5;++i){
-        cout << a[i] << " ";
+        cout << a[i] << " ";        //output
     }
 
     cout << endl;
     
-    cout << "Size od array: ";
+    cout << "Size of array: ";
     cout << sizeof(a) << endl;
 
     cout << "No. of elements in the array: ";
