@@ -37,4 +37,5 @@ int main(){
 
     cout << binary_search(a,5,10);   
 
+return 0;
 }
