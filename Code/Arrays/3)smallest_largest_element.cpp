@@ -16,11 +16,11 @@ int main(){
     int largest = INT_MIN;
 
     for(int i=0;i < 5;++i){
-        if(a[i] < smallest){   
+        if(a[i] < smallest){     //finding the smallest number
             smallest = a[i];
         }
-        if(largest < a[i]){
-            largest = a[i];
+        if(largest < a[i]){     //finding the largest number
+            largest = a[i]; 
         }
         /*(OR) we can use inbuit functions
         largest = max(largest,a[i])
