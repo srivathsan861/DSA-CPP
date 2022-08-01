@@ -31,4 +31,5 @@ int main(){
         cout << a[i] << " ";                 //output
     }
 
+return 0;
 }

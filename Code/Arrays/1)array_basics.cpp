@@ -1,5 +1,5 @@
 #include<iostream>        // to use cout,cin
-using namespace std;      // to avoid std::cout, std::cin
+using namespace std;      // to avoid std:: before those functionalities std::cout, std::cin
 
 int main(){
     

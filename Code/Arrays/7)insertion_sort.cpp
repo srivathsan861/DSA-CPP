@@ -6,7 +6,7 @@ int insertion_sort(int a[],int n){
     for(int i=1;i <= n-1;++i){      //for n elements to sort we need n-1 iterations, conside i is the start of unsorted array
 
         int e = a[i];               // storing the current element in e
-        int j = i-1;                //initializing j a no. lesser than 1, assume j is the start of sorted array
+        int j = i-1;                //initializing j = no. lesser than i, assume j is the start of sorted array
 
         while(j >=0 && a[j] > e){   // j should not be -ve and if a[j] > current element 
 
@@ -35,4 +35,5 @@ int main(){
         cout << a[i] << " ";                 //output
     }
 
+return 0;
 }
