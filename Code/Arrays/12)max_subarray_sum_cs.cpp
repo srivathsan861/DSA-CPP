@@ -9,9 +9,11 @@ int main(){
     for(int i = 0; i < 5; ++i){
         cin >> a[i];                 //input
     }
-    cs[0] = a[0];
-    for(int i=1;i < 5;++i){
-       cs[i] = cs[i-1] + a[i];
+
+    cs[0] = a[0];                //first element of cumulative sum array and normal array is same
+     
+    for(int i=1;i < 5;++i){               
+       cs[i] = cs[i-1] + a[i];  //creating the cumulative sum array
     //    cout << cs[i] << "=" << cs[i-1] << "+" << a[i] << endl;
     }
 
@@ -27,7 +29,7 @@ int main(){
 
         curr_sum = 0;              //re-initializing every time to calculate the sum of new subarray
 
-       curr_sum = cs[j] - cs[i-1];
+       curr_sum = cs[j] - cs[i-1]; //we can calculate the sum of subarray using this cumulative sum array, without using another nested loop
 
         if(curr_sum > max_sum){     //getting the maximum sub array sum
             max_sum = curr_sum;         
