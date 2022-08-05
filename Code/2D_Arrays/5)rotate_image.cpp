@@ -15,7 +15,7 @@ using namespace std;
         int start_col = 0;
         int end_col = n-1;
 
-        while(start_col < end_col){
+        while(start_col < end_col){                    //NOTE: we can also use inbuit reverse function using STL
 
             swap(a[row][start_col],a[row][end_col]);
             start_col++;
