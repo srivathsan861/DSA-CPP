@@ -108,5 +108,14 @@ int main(){
 		cout << strPair[i].first << endl;
 	}
 
+    /*
+    SOLUTION:
+    -->tokenization using strtok()
+    -->for sorting -> 2 comparators 
+                     ->lexio
+                     ->numeric ->in this case convert strings to integer
+    -->reverse output if reverse is set true
+     */
+
 return 0;
 }
