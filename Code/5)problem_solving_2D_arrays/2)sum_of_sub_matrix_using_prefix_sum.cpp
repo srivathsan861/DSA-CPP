@@ -23,25 +23,25 @@ int main(){
     prefix_sum[0][0] = a[0][0];                //first element of prefix sum array and normal array is same
 
      for(int i=0;i < n;++i){
-      prefix_sum[i][0] = a[i][0];
+      prefix_sum[i][0] = a[i][0];            //copying first row as it is
      }
 
      for(int j=0;j < m;++j){
-      prefix_sum[0][j] = a[0][j];
+      prefix_sum[0][j] = a[0][j];            //copying first col as it is
      }
 
      for(int i = 0;i<n;i++){
         for(int j = 1;j<m;j++){
-            prefix_sum[i][j] = prefix_sum[i][j-1]+a[i][j];
+            prefix_sum[i][j] = prefix_sum[i][j-1]+a[i][j];  //row-wise addition
         }
     }
 
      for(int i = 0;i<m;i++){
         for(int j =1;j<n;j++){
-            prefix_sum[j][i] = prefix_sum[j-1][i]+prefix_sum[j][i];
+            prefix_sum[j][i] = prefix_sum[j-1][i]+prefix_sum[j][i]; //col-wise addition
         }
     }
-
+    //[OR]more optimal way to find prefix sum matrix
     // for(int i=1;i < n;++i){
     //       prefix_sum[0][i] = prefix_sum[0][i-1] + a[0][i];
     // }
@@ -62,7 +62,10 @@ int main(){
         for(int tlj = 0;tlj < m;tlj++){                //considering each value in a col as  top-left j value
             for(int bri = tli; bri < n;bri++){         //considering each i value starting from top-left in a row as  bottom-right i value
                 for(int brj = tlj;brj < m;brj++){      //considering each j value starting from top-left in a row as  bottom-right j value
+
+                    //removing the extra area from the top and left, and adding back the area which is removed twice
                     sum += prefix_sum[bri][brj] - prefix_sum[tli-1][brj] - prefix_sum[bri][tlj-1] + prefix_sum[tli-1][tlj-1];
+                    //          TOTAL           -     EXTRA-TOP          -  EXTRA-LEFT            +  AREA-REMOVED-TWICE
                 }
             }
         }
@@ -74,7 +77,7 @@ int main(){
     // cout << "Output: " << endl;
     // for(int i=0;i < n;++i){
     //     for(int j=0;j < m;++j){
-    //         cout << prefix_sum[i][j] << " ";
+    //         cout << prefix_sum[i][j] << " ";        //prefix sum output
     //     }
     //     cout << endl;
     // }
