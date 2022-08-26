@@ -1,6 +1,13 @@
 #include <iostream>
 using namespace std;
 
+/*
+1)STATIC MEMORY ALLOCATION
+2)DYNAMIC MEMORY ALLOCATION
+3)2D ARRAYS USING DYNAMIC MEMORY
+4)RETURNING STATIC ARRAYS VS DYNAMIC ARRAYS
+*/
+
 int *fun1(){
    int fun_array1[] = {11,12,13}; //static array
 
@@ -35,7 +42,7 @@ int main(){
 
     // here ptr can be used to reassign like ptr = new char[30];
 	int *ptr;
-	ptr = new int[100];
+	ptr = new int[100]; //dynamic array
 	cout << "Size of ptr: " << sizeof(ptr) << endl;  //returns pointer size (8)
 	cout << "Size of *ptr: " <<sizeof(*ptr) << endl; //return the size of the data type which ptr points to --> (4)int
 	delete [] ptr;   //you should manually delete it 

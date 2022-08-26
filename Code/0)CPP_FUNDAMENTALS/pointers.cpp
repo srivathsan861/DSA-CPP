@@ -1,6 +1,12 @@
 #include<iostream>
 using namespace std;
 
+/*
+1)BASIC: POINTERS AND REFERENCES
+2)PASS BY VALUE
+3)PASS BY REFERENCE
+*/
+
 void increment_1(int a){
     a = a + 1;
     cout << "Inside function: " << a << endl;
