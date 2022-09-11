@@ -47,8 +47,6 @@ if finally  count == cows , then it is a potential ans
 else decrease the value of min seperation
 */
 
-
-
 int main(){
 
     int stalls[] = {1,2,3,4,8,9};
