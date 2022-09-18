@@ -7,7 +7,7 @@ you can't push other data types in it. so you should create another custom class
 here comes the picture of templated class where 'T' is the type, you can fill T with any datatype like int, char,float etc.
 */
 
-class Vector{
+class Vector{                 //NOTE: We can include this vector class in our .cpp file using -> #include"vector.h"
 
 private:
     //private data members
