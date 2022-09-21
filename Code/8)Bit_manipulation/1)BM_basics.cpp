@@ -15,7 +15,7 @@ int main(){
     cout << "0 | 1: " << (0 | 1) << endl;   //1
     cout << "0 | 0: " << (0 | 0) << endl;   //0
 
-    cout << "XOR(^) OPERATOR: " << endl;    //same bits 0, diff. bits 1
+    cout << "XOR(^) OPERATOR: " << endl;    //exclusive OR: same bits 0, diff. bits 1
     cout << "1 ^ 1: " << (1 ^ 1) << endl;   //0
     cout << "1 ^ 0: " << (1 ^ 0) << endl;   //1
     cout << "0 ^ 1: " << (0 ^ 1) << endl;   //1
