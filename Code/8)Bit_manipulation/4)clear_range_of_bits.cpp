@@ -1,6 +1,8 @@
 #include<iostream>
 using namespace std;
 
+//NOTE: DRY RUN USING PAPER PEN FOR BETTER UNDERSTANDING
+
 int clear_last_i_bits(int n,int i){
     int mask = (-1 << i); //creating all ones and left shifting 'i' places so that if i=4 , then 4 0's will be added to the last
     return n & mask;     //and by performing AND with the number we will clear all bits strting from i

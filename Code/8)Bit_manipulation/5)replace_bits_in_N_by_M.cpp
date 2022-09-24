@@ -1,6 +1,8 @@
 #include<iostream>
 using namespace std;
 
+//NOTE: DRY RUN USING PAPER PEN FOR BETTER UNDERSTANDING
+
 /*
 EXAMPLE:
 N=1001101
