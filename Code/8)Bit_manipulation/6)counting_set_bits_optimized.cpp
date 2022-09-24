@@ -3,7 +3,7 @@ using namespace std;
 
 //NOTE: DRY RUN USING PAPER PEN FOR BETTER UNDERSTANDING
 
-int count_bits(int n){
+int count_bits(int n){     //time complexity: O(log n) + 1
 
     int ans = 0;
 
@@ -15,7 +15,7 @@ int count_bits(int n){
 return ans;
 }
 
-int count_bits_optimized(int n){
+int count_bits_optimized(int n){   //time complexity: O(no. of set bits), worst case it can be O(log n)+1
 
     int ans = 0;
 
