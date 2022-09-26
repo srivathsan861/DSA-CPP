@@ -40,7 +40,7 @@ for(int i=0;i < n;++i){
     int last_bit = (no & 1);        //storing last bit
     count[j] += last_bit;           //adding last bit in the array
     j++;                            //incrementing the array index
-    no = no >> 1;                   ////then we are right shifting 'no' because now we should consider the next bit
+    no = no >> 1;                   //then we are right shifting 'no' because now we should consider the next bit
 
    }
 }
