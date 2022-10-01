@@ -10,7 +10,7 @@ void print_factors(int n){
 
     int count;
 
-    for(int i=2;i*i <= n;++i){      //2 to rootof(n)
+    for(int i=2;i*i <= n;++i){      //2 to rootof(n) -> time complexity: O(rootof(n))
 
         if(n%i == 0){
             count = 0;              //reinitializing count
