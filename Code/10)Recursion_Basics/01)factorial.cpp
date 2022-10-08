@@ -24,7 +24,7 @@ VISUALIZATION:        5! = 5 * 4!
                        2! = 2 * 1! => 2 * 1 = 2   (here we got the value of 1! = 1 from the return of 1!)
                        3! = 3 * 2! => 3 * 2 = 6   (here we got the value of 2! = 2 from the return of 2!)
                        4! = 4 * 3! => 4 * 6 = 24  (here we got the value of 3! = 6 from the return of 3!)
-                       5! = 5 * 4! => 5 * 24= 120 (here we got the value of 4! = 24 from the return of 1!)
+                       5! = 5 * 4! => 5 * 24 = 120 (here we got the value of 4! = 24 from the return of 4!)
                        
                        this part we call it as BOTTOM UP -> going back from base case
 */
