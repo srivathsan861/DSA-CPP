@@ -23,7 +23,7 @@ QUICK-THINKING:
              => f(N) = f(N-1)
 
  ->CASE 2:   ________ _
-             n-1      1
+             N-1      1
 
             *in this case if we had only 1 at the end , then we want only string which ends at '0' because '1' cannot be at (N-1) 
             i.e because (1 1) is invalid according to qn.
