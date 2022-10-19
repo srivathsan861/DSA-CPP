@@ -23,7 +23,7 @@ APPROACH:
 
 SUMMARIZING:
  ->at any index 'i', (no. of open brackets) < N
- ->at any index 'i', (no. of close bracket) < (np. of open brackets)
+ ->at any index 'i', (no. of close bracket) < (n0. of open brackets)
 
 TIP: try to draw the recursive tree               
 */
