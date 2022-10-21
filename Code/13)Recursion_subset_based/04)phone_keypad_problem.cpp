@@ -36,7 +36,7 @@ void generate_names(char *in,char *out,int i,int j){
         return;
     }
 
-    int digit = in[i] - '0'; //converting the ith char gigit to int because we are taking input as char
+    int digit = in[i] - '0'; //converting the ith char digit to int because we are taking input as char
 
     if(digit == 1 || digit == 0){  //corner-case i.e if we '0123' -> 0 and 1 will be skipped but subsets of 23 will be printed
         generate_names(in,out,i+1,j); //incrementing input pointer alone because there is no associated characters with 0 and 1
